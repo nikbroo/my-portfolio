@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #101022;
+  --background-secondary: #191f2e80;
+  --foreground: white;
+  --primary: #1313ec;
+  --secondary: #3ee0cf;
+  --tertiary: #3ee0cf4d;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
   --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #101022;
+    --foreground: white;
   }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-space-grotesk);
+}
+
+@theme {
+  --animate-typing: typing 5s steps(40, end) infinite;
+  --animate-caret: blink 0.8s step-end infinite;
+
+  @keyframes typing {
+    0%,
+    100% {
+      width: 0;
+    }
+    40%,
+    60% {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    50.01%,
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+@layer components {
+  .text-typing {
+    @apply relative
+      inline-block
+      overflow-hidden
+      whitespace-nowrap
+      animate-typing;
+  }
+
+  .text-typing::after {
+    content: "|";
+    @apply absolute
+      -right-1
+      top-0
+      h-full
+      text-white
+      animate-caret;
+  }
 }

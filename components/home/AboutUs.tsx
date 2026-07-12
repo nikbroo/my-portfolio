@@ -19,27 +19,24 @@ const AboutUs = () => {
       <div>
         <SectionTitle>About Me</SectionTitle>
         <h2 className="text-2xl font-bold mt-6">
-          Frontend developer focused on performance, scalability, and clean UI
+          Software Engineer building scalable SaaS applications with React.js
         </h2>
         <p className="text-gray-300 mt-6">
-          I am a Frontend Developer with 4 years of overall experience and 2+
-          years of hands-on expertise in React.js, Next.js, and React Native. I
-          specialize in building scalable, data-driven web and mobile
-          applications with a strong focus on performance, reusable components,
-          and clean UI/UX.
+          I'm a Software Engineer with 4+ years of overall experience, including 2+ years specializing in React.js. 
+          I build scalable SaaS, web, and mobile applications using React.js, Next.js, React Native, and TypeScript, 
+          with a strong focus on performance, reusable architecture, and exceptional user experience.
           <br />
           <br />
-          I have worked extensively on dashboards, management systems, and
-          API-integrated applications that help businesses streamline operations
-          and improve productivity. I am proficient in JavaScript, TypeScript,
-          Redux Toolkit, and modern styling frameworks like Tailwind CSS and
-          SCSS.
+          Throughout my career, I've developed business management platforms, real-time dashboards, 
+          and API-driven applications that solve real-world business challenges. 
+          My recent work includes a Poker Club Management SaaS Platform, a Jewellery Accounting Application, 
+          and a Worker Work Management App, helping businesses improve operational efficiency through modern software solutions.
           <br />
           <br />
-          Alongside frontend development, I have a basic understanding of
-          Node.js and REST APIs, which helps me collaborate effectively across
-          full-stack workflows. I enjoy solving real-world problems and
-          continuously improving user-centric digital products.
+          Along with frontend development, I have practical experience with Node.js, Express.js, MongoDB, and 
+          REST API development, allowing me to collaborate effectively across frontend and backend teams. 
+          I also leverage AI-assisted development tools such as ChatGPT and Claude Code to accelerate development, 
+          improve code quality, and enhance productivity.
         </p>
 
         <div className="flex gap-6 mt-6">

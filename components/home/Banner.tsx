@@ -15,17 +15,18 @@ const Banner = () => {
       <h1 className="text-4xl md:text-6xl font-bold mt-6">I'm Nikhil Garg</h1>
       <span>
         <h2 className="text-2xl md:text-3xl font-bold mt-6 text-typing">
-          Frontend Developer
+          Software Engineer
         </h2>
       </span>
       <p className="text-gray-300 text-center mt-6">
-        4 years of overall experience with 2+ years specializing in React.js,
-        Next.js, and React Native. I build high-performance, user-centric
-        applications that solve real business problems.
+        Software Engineer with 4+ years of overall experience, including 2+ years specializing in React.js. 
+        I build scalable SaaS, web, and mobile applications using 
+        React.js, Next.js, React Native, TypeScript, Node.js, and MongoDB, 
+        with a strong focus on performance, clean architecture, and user-centric solutions.
       </p>
       <Button
         className="mt-6 text-xl"
-        href="https://drive.google.com/file/d/10L-25XsZpQz92y4VAzPA13y0KfG2sJ8N/view?usp=drive_link"
+        href="https://drive.google.com/file/d/13H4MrC1zQMxAAb5OAW0OKdFxjyMqxMCf/view?usp=drive_link"
       >
         Download CV <IoCodeDownload className="text-3xl" />
       </Button>

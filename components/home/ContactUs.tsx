@@ -9,7 +9,7 @@ const ContactUs = () => {
     <Container className="mb-12 flex flex-col items-center" id="contact">
       <SectionTitle>Contact Me</SectionTitle>
       <h2 className="text-2xl font-bold mt-6">
-        Let's connect and build something great together
+        Let&apos;s connect and build something great together
       </h2>
 
       <div className="w-full grid md:grid-cols-3 gap-6 mt-12 max-w-[1000px] mx-auto">
@@ -33,7 +33,7 @@ const ContactUs = () => {
       </div>
 
       <div className="w-full border border-white/5 rounded-2xl bg-background-secondary mt-6 p-6 max-w-[600px] mx-auto hover:shadow-[0_0_10px_0] hover:shadow-tertiary transition-all duration-2000">
-        <h3 className="text-xl font-semibold text-center">Let's Connect</h3>
+        <h3 className="text-xl font-semibold text-center">Let&apos;s Connect</h3>
         <div className="flex items-center justify-center gap-3 mt-4">
           <Link
             href="https://www.linkedin.com/in/nikhilgarg1997"

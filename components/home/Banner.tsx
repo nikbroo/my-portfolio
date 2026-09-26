@@ -12,17 +12,18 @@ const Banner = () => {
         Hello, World!
       </SectionTitle>
 
-      <h1 className="text-4xl md:text-6xl font-bold mt-6">I'm Nikhil Garg</h1>
+      <h1 className="text-4xl md:text-6xl font-bold mt-6">I&apos;m Nikhil Garg</h1>
       <span>
         <h2 className="text-2xl md:text-3xl font-bold mt-6 text-typing">
           Software Engineer
         </h2>
       </span>
       <p className="text-gray-300 text-center mt-6">
-        Software Engineer with 4+ years of overall experience, including 2+ years specializing in React.js. 
-        I build scalable SaaS, web, and mobile applications using 
-        React.js, Next.js, React Native, TypeScript, Node.js, and MongoDB, 
-        with a strong focus on performance, clean architecture, and user-centric solutions.
+        Software Engineer with 4+ years of experience building scalable SaaS,
+        web, and mobile applications using React.js, Next.js, React Native,
+        TypeScript, Node.js, and MongoDB. Skilled in developing reusable
+        components, integrating REST APIs, optimizing performance, and
+        delivering production-ready applications.
       </p>
       <Button
         className="mt-6 text-xl"

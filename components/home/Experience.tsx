@@ -1,4 +1,3 @@
-import { FaLaptopCode } from "react-icons/fa";
 import Container from "../layout/Container";
 import SectionTitle from "../layout/SectionTitle";
 import ExperienceBox from "../layout/ExperienceBox";
@@ -7,31 +6,45 @@ const experienceData = [
   {
     company: "Graphketing Pvt. Ltd.",
     position: "React Developer",
-    date: "Dec, 2023 - Present",
+    date: "Dec 2023 - Present",
     location: "Noida, Uttar Pradesh, India",
     projects: [
       {
-        title: "Jewellery Accounting App",
+        title: "Poker Club Management SaaS Platform",
         description: [
-          "Developed a <b style='color: white'>Jewellery Accounting App</b> for gold, silver, and diamond businesses to replace manual bookkeeping.",
-          "Implemented jewellery-specific features such as <b style='color: white'>Girvi, Karigar, and stock management</b>, not supported effectively by generic accounting tools.",
-          "Reduced daily accounting workload from a <b style='color: white'>full day to 1-2 hours</b> through a customized jewellery accounting solution.",
+          "Developed a <b style='color: white'>Poker Club Management SaaS Platform</b> with <b style='color: white'>18+ modules</b> using React.js, TypeScript, Redux Toolkit, Socket.IO, and REST APIs.",
+          "Implemented <b style='color: white'>role-based access control (RBAC)</b> and a library of reusable components shared across every module.",
+          "Delivered <b style='color: white'>real-time features</b> over Socket.IO, keeping table state, balances, and activity in sync across connected clients.",
+        ],
+      },
+      {
+        title: "Jewellery Accounting Application",
+        description: [
+          "Built a <b style='color: white'>Jewellery Accounting Application</b> for gold, silver, and diamond businesses, digitizing manual accounting workflows end to end.",
+          "Reduced daily accounting effort from <b style='color: white'>1 day to 1-2 hours</b> through a workflow tailored to jewellery-specific bookkeeping.",
         ],
       },
       {
         title: "Worker Work Management App",
+        link: "https://play.google.com/store/apps/details?id=ccom.workerapp",
         description: [
-          "Built a mobile application using React Native to manage daily worker assignments and performance tracking.",
-          "Implemented analytics dashboards used by <b style='color: white'>20+ managers</b> to monitor productivity and training effectiveness.",
-          "Improved task visibility and reporting, leading to better workforce management.",
+          "Developed a <b style='color: white'>Worker Work Management App</b> using React Native, published on the Google Play Store.",
+          "Implemented <b style='color: white'>real-time tracking and analytics</b> with REST API integration to improve day-to-day workforce management.",
         ],
       },
       {
-        title: "Inventory Management Dashboard",
+        title: "Aquasheel - RO Management SaaS Platform (Backend)",
         description: [
-          "Developed a dynamic frontend for an Inventory Management Dashboard using React Js and Bootstrap.",
-          "Integrated comprehensive APIs to seamlessly manage complex functionalities such as adding raw materials, creating finished goods, and overseeing order dispatch, returns, and cancellations.",
-          "Implemented advanced customer detail management and analytics to provide insightful tracking of inventory levels and order history, boosting operational efficiency.",
+          "Engineered the <b style='color: white'>backend</b> for Aquasheel using <b style='color: white'>Node.js, Express.js, TypeScript, MongoDB, and AWS</b>.",
+          "Developed REST APIs with <b style='color: white'>JWT and OTP authentication</b>, scheduled jobs, and automated invoicing.",
+          "Built wallet and reward management along with <b style='color: white'>Razorpay payment gateway integration</b>.",
+        ],
+      },
+      {
+        title: "Across Projects",
+        description: [
+          "Improved application performance through <b style='color: white'>lazy loading, code splitting, memoization, reusable architecture, and efficient state management</b>.",
+          "Collaborated with cross-functional teams to deliver scalable, production-ready solutions.",
         ],
       },
     ],
@@ -39,14 +52,14 @@ const experienceData = [
   {
     company: "Ear Solutions Pvt. Ltd.",
     position: "Frontend Developer",
-    date: "Jan, 2023 - Dec, 2023",
+    date: "Jan 2023 - Dec 2023",
     location: "Noida, Uttar Pradesh, India",
     projects: [
       {
         description: [
-          "Gained in-depth knowledge in React Js, React Native, JavaScript, HTML, and CSS, laying a solid foundation for modern web development.",
-          "Contributed to in-house projects, applying newly acquired skills to build and enhance web applications.",
-          "Managed and maintained official websites, ensuring they were up-to-date, responsive, and user-friendly, thereby improving the online presence of the company.",
+          "Achieved significant performance gains, improving <b style='color: white'>Core Web Vitals and component loading times by 15%</b> through comprehensive refactoring of legacy code.",
+          "Established <b style='color: white'>reusable React component standards</b> adopted across the codebase.",
+          "<b style='color: white'>Enhanced team efficiency</b> by maintaining comprehensive documentation for new modules and shared component libraries.",
         ],
       },
     ],
@@ -54,14 +67,14 @@ const experienceData = [
   {
     company: "QTC Infotech Pvt. Ltd.",
     position: "Web Designer",
-    date: "Sep, 2021 - Aug,2022",
-    location: " Jind, Haryana, India",
+    date: "Sep 2021 - Aug 2022",
+    location: "Jind, Haryana, India",
     projects: [
       {
         description: [
-          "Developed a strong foundation in JavaScript, HTML, CSS, and WordPress, mastering the essentials of web development.",
-          "Worked on live projects, gaining practical experience by creating and deploying fully responsive websites.",
-          "Collaborated with teams to ensure websites were not only aesthetically pleasing but also optimized for performance and user experience.",
+          "Successfully launched <b style='color: white'>8+ fully responsive client websites</b> on time, overseeing the process from initial design concept through final deployment.",
+          "Achieved <b style='color: white'>high performance scores</b> by optimizing assets and user experience (UX) across all deliverables.",
+          "Utilized JavaScript, HTML, CSS, and WordPress to <b style='color: white'>build foundational skills</b> in end-to-end web development and content management.",
         ],
       },
     ],
@@ -70,7 +83,7 @@ const experienceData = [
 
 const Experience = () => {
   return (
-    <Container className="mb-12 flex flex-col items-center" id="contact">
+    <Container className="mb-12 flex flex-col items-center" id="experience">
       <SectionTitle>Work Experience</SectionTitle>
       <h2 className="text-2xl font-bold mt-6">
         Hands-on experience building real-world production applications
@@ -80,8 +93,8 @@ const Experience = () => {
         {experienceData.map((item) => (
           <ExperienceBox
             key={item.company}
-            company={item.company}
-            position={item.position}
+            title={item.company}
+            subtitle={item.position}
             date={item.date}
             location={item.location}
             projects={item.projects}

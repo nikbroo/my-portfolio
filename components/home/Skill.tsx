@@ -16,12 +16,53 @@ const skillData = [
   {
     icon: "✨",
     title: "Styling & UI",
-    skills: ["Tailwind CSS", "SCSS", "Bootstrap"],
+    skills: ["Tailwind CSS", "SCSS", "Bootstrap", "Material UI"],
   },
   {
     icon: "🚀",
     title: "State Management & Forms",
-    skills: ["Redux Toolkit", "Formik", "React Hook Form"],
+    skills: ["Redux Toolkit", "Context API", "React Hook Form", "Formik"],
+  },
+  {
+    icon: "🗄️",
+    title: "Backend & Database",
+    skills: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "REST API Development",
+      "REST API Integration",
+    ],
+  },
+  {
+    icon: "🏗️",
+    title: "Frontend Architecture",
+    skills: [
+      "Component-Based Architecture",
+      "Custom Hooks",
+      "Responsive Design",
+      "Performance Optimization",
+      "Lazy Loading",
+      "Code Splitting",
+      "Memoization",
+      "SaaS Application Development",
+    ],
+  },
+  {
+    icon: "⚡",
+    title: "Real-Time Communication",
+    skills: ["Socket.IO", "WebSocket Integration"],
+  },
+  {
+    icon: "🧪",
+    title: "Testing",
+    skills: ["Jest", "React Testing Library", "Unit Testing"],
+  },
+  {
+    icon: "🤖",
+    title: "AI-Assisted Development",
+    skills: ["ChatGPT", "Claude Code"],
   },
   {
     icon: "🛠️",
@@ -36,11 +77,6 @@ const skillData = [
       "Chrome DevTools",
       "Redux DevTools",
     ],
-  },
-  {
-    icon: "💻",
-    title: "Backend (Basic)",
-    skills: ["Node.js", "REST API Integration"],
   },
 ];
 
